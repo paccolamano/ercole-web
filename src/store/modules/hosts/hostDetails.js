@@ -289,6 +289,7 @@ export const actions = {
           if (type === 'oracle') {
             const oracle = databases.oracle.database.databases
             getDatabases = mapHostDatabases(oracle, extraData, type)
+            console.log('getdatabases', getDatabases)
           } else if (type === 'mysql') {
             const mysql = databases.mysql.instances
             getDatabases = mapHostDatabases(mysql, extraData, type)

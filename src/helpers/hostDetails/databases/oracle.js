@@ -60,6 +60,7 @@ const mapOracleDatabases = (data, extraData) => {
       tablespaces: [...item.tablespaces],
       schemas: [...item.schemas],
       patches: genericResolve([...item.patches]),
+      diskGroups: genericResolve([...item.diskGroups]),
       psus: genericResolve([...item.psus]),
       addms: [...item.addms],
       segmentAdvisors: [...item.segmentAdvisors],
